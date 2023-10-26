@@ -15,6 +15,7 @@ services:
       - ./data:/var/lib/mysql
   building:
     build:
+      context: ./df
       dockerfile: Dockerfile
     image: build
     ports:
